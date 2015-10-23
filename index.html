@@ -1,3 +1,11 @@
+---
+site-name: Captivate Listings
+domain: "http://www.captivatelistings.com"
+primary-tagline: Blow buyers and sellers away
+secondary-tagline: Beautifully crafted property sites in under 10 min.
+ <!-- Stay Focused on You Clients. Setup a site in Less than 10 min. -->
+---
+
 <!DOCTYPE html>
 <!-- Drew - A Multipurpose Landing Page Template, designed by David Rozando (http://design.davidrozando.com) -->
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
@@ -12,10 +20,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 		<!-- BASIC INFO -->
-		<title>Drew - A Multipurpose Landing Page Template</title>
-		<meta name="author" content="David Rozando">
-		<meta name="keywords" content="responsive, parallax, bootstrap, html5 template, one page, landing page">
-		<meta name="description" content="Drew - A Multipurpose Landing Page Template">
+		<title>{{ page.site-name }}</title>
+		<meta name="author" content="David Ladowitz">
+		<meta name="keywords" content="Real Estate Listings, Single Property Websites, Real Estate Photography, Matterport 3D, Real Estate Agents, Real Estate Brokers">
+		<meta name="description" content="Captivate Listings - Beautiful Single Property Websites for Real Estate">
 
 		<!-- FAVICONS -->
 		<link rel="icon" href="images/favicons/favicon.ico">
@@ -39,15 +47,16 @@
 		<!-- COLORS -->
 		<!-- <link id="color-css" rel="stylesheet" href="css/colors/pink.css"> -->
 		<!-- <link id="color-css" rel="stylesheet" href="css/colors/red.css"> -->
-		<link id="color-css" rel="stylesheet" href="css/colors/orange.css">
+		<!-- <link id="color-css" rel="stylesheet" href="css/colors/orange.css"> -->
 		<!-- <link id="color-css" rel="stylesheet" href="css/colors/yellow.css"> -->
 		<!-- <link id="color-css" rel="stylesheet" href="css/colors/green.css"> -->
 		<!-- <link id="color-css" rel="stylesheet" href="css/colors/turquoise.css"> -->
-		<!-- <link id="color-css" rel="stylesheet" href="css/colors/blue.css"> -->
+		<link id="color-css" rel="stylesheet" href="css/colors/blue.css">
 
 	</head>
 
-	<body class="enable-animations enable-preloader">
+  <!-- TODO add 'enable-preloader' back to body  -->
+	<body class="enable-animations">
 
 		<div id="document" class="document">
 
@@ -69,7 +78,8 @@
 
 						<!-- HEADER LOGO -->
 						<a class="navbar-logo navbar-brand anchor-link" href="#hero">
-							<img src="images/logos/header-logo.png" srcset="images/logos/header-logo@2x.png 2x" alt="Drew">
+							<!-- <img src="images/logos/header-logo.png" srcset="images/logos/header-logo@2x.png 2x" alt="Drew"> -->
+							{{ page.site-name }}
 						</a>
 
 					</div>
@@ -123,7 +133,7 @@
 
 							<!-- IMAGE BACKGROUND -->
 							<div class="section-background-image parallax" data-stellar-ratio="0.4">
-								<img src="images/backgrounds/hero-bg-slider-1.jpg" alt="" style="opacity: 0.3;">
+								<img src="images/backgrounds/home1.jpg" alt="" style="opacity: 0.3;">
 							</div>
 
 						</div>
@@ -138,14 +148,14 @@
 
 											<div class="hero-heading" data-animation="fadeIn">
 
-												<h1 class="hero-subtitle">Hi, Welcome to Drew</h1>
+												<h1 class="hero-subtitle">{{ page.primary-tagline }}</h1>
 
-												<p class="hero-tagline">A robust Landing Page Template which solves all your landing page needs, fit for any business / marketing landing page.</p>
+												<p class="hero-tagline">{{ page.secondary-tagline }}</p>
 
 											</div>
 
 											<p class="hero-buttons">
-												<a href="https://wrapbootstrap.com/theme/drew-all-in-one-marketing-landing-page-WB0350PTJ" class="btn btn-lg btn-primary">Buy This Template</a>
+												<a href="https://wrapbootstrap.com/theme/drew-all-in-one-marketing-landing-page-WB0350PTJ" class="btn btn-lg btn-primary">Start Now</a>
 											</p>
 
 										</div>
@@ -165,7 +175,7 @@
 
 							<!-- VIDEO BACKGROUND -->
 							<div class="section-background-image parallax" data-stellar-ratio="0.4">
-								<img src="images/backgrounds/hero-bg-slider-2.jpg" alt="" style="opacity: 0.3;">
+								<img src="images/backgrounds/beach-home.jpg" alt="" style="opacity: 0.5;">
 							</div>
 
 						</div>
@@ -176,13 +186,13 @@
 								<div class="hero-content-inner">
 
 									<div class="row">
-										<div class="col-md-6 col-md-offset-6">
+										<div class="col-md-6">
 
 											<div class="hero-heading" data-animation="fadeIn">
 
-												<h1 class="hero-subtitle">High Quality Design</h1>
+												<h1 class="hero-subtitle">Stay Focued On Your Clients</h1>
 
-												<p class="hero-tagline"><strong>DREW</strong> is developed with both design and high convertion in mind, making it perfectly fit any landing page purpose.</p>
+												<p class="hero-tagline">Give us 10 min and we'll do the rest.</p>
 
 											</div>
 
@@ -207,10 +217,11 @@
 
 							<!-- VIDEO BACKGROUND -->
 							<div class="section-background-video section-background-dot-overlay parallax" data-stellar-ratio="0.4">
-								<video preload="auto" autoplay loop muted poster="images/backgrounds/video-fallback-bg.jpg" style="opacity: 0.3;">
-									<source type="video/mp4" src="videos/video-bg.mp4">
-									<source type="video/ogg" src="videos/video-bg.ogv">
-									<source type="video/webm" src="videos/video-bg.webm">
+								<video preload="auto" autoplay loop muted poster="images/backgrounds/two_sf_houses.jpg" style="opacity: 0.3;">
+									<source type="video/mp4" src="videos/moss-landing.mp4">
+									<!-- <source type="video/ogg" src="videos/video-bg.mp4"> -->
+									<!-- <source type="video/ogg" src="videos/video-bg.ogv">
+									<source type="video/webm" src="videos/video-bg.webm"> -->
 								</video>
 							</div>
 
@@ -222,17 +233,17 @@
 								<div class="hero-content-inner">
 
 									<div class="row">
-										<div class="col-md-10 col-md-offset-1">
+										<div class="col-md-6 col-md-offset-6">
 
-											<div class="hero-heading text-center" data-animation="fadeIn">
+											<div class="hero-heading text-right" data-animation="fadeIn">
 
-												<h1 class="hero-subtitle">Easy as having a cup of coffee</h1>
+												<h1 class="hero-subtitle">Show sellers you care</h1>
 
-												<p class="hero-tagline">Provided with a complete documentation and modular CSS classes, <strong>DREW</strong> is ready to rocks your new landing page in minutes!</p>
+												<p class="hero-tagline">A single property website shows your commitment to presenting their home in the best possible light</p>
 
 											</div>
 
-											<p class="hero-buttons text-center">
+											<p class="hero-buttons text-right">
 												<a href="https://wrapbootstrap.com/theme/drew-all-in-one-marketing-landing-page-WB0350PTJ" class="btn btn-lg btn-primary">Buy This Template</a>
 											</p>
 
